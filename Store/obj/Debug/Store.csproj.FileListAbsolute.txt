@@ -1,0 +1,1 @@
+D:\MyProject\CSharp\Store\Store\bin\Debug\Store.exe.config
