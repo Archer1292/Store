@@ -1,1 +1,15 @@
 D:\MyProject\CSharp\Store\Store\bin\Debug\Store.exe.config
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store.csprojResolveAssemblyReference.cache
+D:\MyProject\CSharp\Store\Store\obj\Debug\MainWindow.baml
+D:\MyProject\CSharp\Store\Store\obj\Debug\MainWindow.g.cs
+D:\MyProject\CSharp\Store\Store\obj\Debug\App.g.cs
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store_MarkupCompile.cache
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store.g.resources
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store.Properties.Resources.resources
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store.csproj.GenerateResource.Cache
+D:\MyProject\CSharp\Store\Store\bin\Debug\Store.exe
+D:\MyProject\CSharp\Store\Store\bin\Debug\Store.pdb
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store.exe
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store.pdb
+D:\MyProject\CSharp\Store\Store\obj\Debug\WEmployees.baml
+D:\MyProject\CSharp\Store\Store\obj\Debug\WEmployees.g.cs

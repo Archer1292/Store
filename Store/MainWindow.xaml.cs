@@ -22,7 +22,7 @@ namespace Store
     {
         public MainWindow()
         {
-            InitializeComponent();
+            
         }
     }
 }
