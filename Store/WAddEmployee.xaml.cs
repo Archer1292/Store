@@ -27,18 +27,18 @@ namespace Store
 
         private void btnAddEmployee_Click(object sender, RoutedEventArgs e)
         {
-            Employee e1 = new Employee(tbFirstName.Text, tbLastName.Text);
-            Guid a = new Guid();
-            e1.Unit.Id =Guid.Parse(tbEmployeeUnit.Text);
-            Refresh_lbEmployees();
+            //Employee e1 = new Employee(tbFirstName.Text, tbLastName.Text);
+            
+            //e1.Unit.Id =Guid.Parse(tbEmployeeUnit.Text);
+            //Refresh_lbEmployees();
             
             
         }
         //TODO сделать привязку к данным
         private void Refresh_lbEmployees()
         {
-            lbEmployees.ItemsSource = null;
-            lbEmployees.ItemsSource = Employee.Employees;
+            //lbEmployees.ItemsSource = null;
+           // lbEmployees.ItemsSource = Employee.Employees;
         }
     }
 }

@@ -13,3 +13,15 @@ D:\MyProject\CSharp\Store\Store\obj\Debug\Store.exe
 D:\MyProject\CSharp\Store\Store\obj\Debug\Store.pdb
 D:\MyProject\CSharp\Store\Store\obj\Debug\WEmployees.baml
 D:\MyProject\CSharp\Store\Store\obj\Debug\WEmployees.g.cs
+D:\MyProject\CSharp\Store\Store\obj\Debug\WUnits.baml
+D:\MyProject\CSharp\Store\Store\obj\Debug\WUnits.g.cs
+D:\MyProject\CSharp\Store\Store\obj\Debug\WAuthorization.baml
+D:\MyProject\CSharp\Store\Store\obj\Debug\WAuthorization.g.cs
+D:\MyProject\CSharp\Store\Store\bin\Debug\StoreLibrary.dll
+D:\MyProject\CSharp\Store\Store\bin\Debug\StoreLibrary.pdb
+D:\MyProject\CSharp\Store\Store\obj\Debug\testDB.g.cs
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store_MarkupCompile.lref
+D:\MyProject\CSharp\Store\Store\obj\Debug\testDB.baml
+D:\MyProject\CSharp\Store\Store\bin\Debug\Database1.mdf
+D:\MyProject\CSharp\Store\Store\bin\Debug\Database1_log.ldf
+D:\MyProject\CSharp\Store\Store\obj\Debug\Store_Content.g.cs

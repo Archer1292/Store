@@ -31,3 +31,9 @@
 # Debug files
 *.dSYM/
 *.su
+ 
+# c#
+*/obj/*
+*\obj\*
+*/bin/*
+*\bin\

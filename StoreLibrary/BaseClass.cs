@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Store
+namespace StoreLibrary
 {
-    class BaseClass
+    public class BaseClass
     {
-        public Guid Id;
+        public Guid Id{get;private set;}
         public BaseClass()
         {
             Id = Guid.NewGuid();

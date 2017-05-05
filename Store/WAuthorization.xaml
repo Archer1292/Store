@@ -1,0 +1,13 @@
+﻿<Window x:Class="Store.WAuthorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Вхід" Height="230" Width="300" MaxHeight="230" MaxWidth="300">
+    <Grid Margin="0,0,0,0">        
+        <Label Content="Логін" HorizontalAlignment="Left" Margin="40,40,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="110,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="40,85,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="110,85,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Ввійти" HorizontalAlignment="Left" Margin="195,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="100,150,0,0" VerticalAlignment="Top" Width="76"/>
+    </Grid>
+</Window>

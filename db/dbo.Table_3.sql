@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[CompanyUnit]
+(
+	[CU_id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [UnitName] NVARCHAR(50) NOT NULL, 
+    [ParentUnit_id] UNIQUEIDENTIFIER NULL, 
+    [UnitType] NVARCHAR(50) NULL 
+)
