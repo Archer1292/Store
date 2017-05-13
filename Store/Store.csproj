@@ -72,11 +72,17 @@
     <Compile Include="testDB.xaml.cs">
       <DependentUpon>testDB.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WAddImplement.xaml.cs">
-      <DependentUpon>WAddImplement.xaml</DependentUpon>
+    <Compile Include="WImplement.xaml.cs">
+      <DependentUpon>WImplement.xaml</DependentUpon>
     </Compile>
     <Compile Include="WAuthorization.xaml.cs">
       <DependentUpon>WAuthorization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WImplementCard.xaml.cs">
+      <DependentUpon>WImplementCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WMotion.xaml.cs">
+      <DependentUpon>WMotion.xaml</DependentUpon>
     </Compile>
     <Compile Include="WUnits.xaml.cs">
       <DependentUpon>WUnits.xaml</DependentUpon>
@@ -88,7 +94,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WAddImplement.xaml">
+    <Page Include="WImplement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -115,6 +121,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WImplementCard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WMotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WUnits.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

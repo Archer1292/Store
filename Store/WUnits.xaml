@@ -10,7 +10,7 @@
         <Button x:Name="btnAddEmployee_Copy" Content="Add" Margin="151,0,0,10" Click="btnAddEmployee_Click" HorizontalAlignment="Left" Width="75" Height="25" VerticalAlignment="Bottom"/>
         <ComboBox x:Name="cbParent" HorizontalAlignment="Left" Margin="139,71,0,0" VerticalAlignment="Top" Width="194"/>
         <ComboBox x:Name="cbHeadOfUnit" HorizontalAlignment="Left" Margin="139,100,0,0" VerticalAlignment="Top" Width="194"/>
-        <Label x:Name="label" Content="Новий підрозділ" HorizontalAlignment="Left" Margin="125,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbUnitName" Content="Новий підрозділ" HorizontalAlignment="Left" Margin="125,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label2" Content="Об'єм" HorizontalAlignment="Left" Margin="131,138,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.799,0.336" IsEnabled="False"/>
         <CheckBox x:Name="chbStorage" Content="Склад" HorizontalAlignment="Left" Margin="52,143,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="194,141,0,0" TextWrapping="Wrap" Text="1500" VerticalAlignment="Top" Width="75" IsEnabled="False" >
