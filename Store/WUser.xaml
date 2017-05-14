@@ -8,14 +8,14 @@
     <Grid x:Name="Користувачі">
         <Label x:Name="LbName" Content="" HorizontalAlignment="Left" Margin="74,10,0,140"/>
         <Label x:Name="label" Content="" HorizontalAlignment="Left" Margin="441,243,-249,0" VerticalAlignment="Top" Width="100"/>
-        <Label x:Name="label1" Content="Имя сотрудника" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbEmployeeName" HorizontalAlignment="Left" Height="23" Margin="117,49,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
+        <Label x:Name="label1" Content="Cотрудник" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbEmployeeName" HorizontalAlignment="Left" Height="23" Margin="117,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
         <Label x:Name="label1_Copy" Content="Логин" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="117,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="117,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
         <Label x:Name="label1_Copy1" Content="Пароль" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="btPassword" HorizontalAlignment="Left" Height="23" Margin="117,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="btPassword" HorizontalAlignment="Left" Height="23" Margin="117,108,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
         <Label x:Name="label1_Copy2" Content="Повторити проль" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbPassword2" HorizontalAlignment="Left" Height="23" Margin="117,136,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="tbPassword2" HorizontalAlignment="Left" Height="23" Margin="117,136,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="165"/>
         <Button x:Name="button" Content="Прийняти" HorizontalAlignment="Left" Margin="182,184,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
