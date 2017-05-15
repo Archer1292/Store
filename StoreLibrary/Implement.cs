@@ -12,25 +12,25 @@ namespace StoreLibrary
     using System;
     using System.Collections.Generic;
     
-    public partial class Implement
+    public partial class Implement : BaseClass
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Implement()
+        
+        public Implement(String name, string type)
         {
-            this.ImplementsCards = new HashSet<ImplementsCard>();
+            Name = name;
+            Type = type;
         }
-    
-        public System.Guid I_id { get; set; }
+
+        public Dictionary<Guid,Implement> ImplementsDict = new Dictionary<Guid, Implement>();
         public string Type { get; set; }
         public string Name { get; set; }
-        public Nullable<float> Weight { get; set; }
-        public Nullable<float> Width { get; set; }
-        public Nullable<float> Height { get; set; }
-        public Nullable<float> Long { get; set; }
+        public float Weight { get; set; }
+        public float Width { get; set; }
+        public float Height { get; set; }
+        public float Long { get; set; }
         public string Deskription { get; set; }
         public string Photo { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ImplementsCard> ImplementsCards { get; set; }
+       
     }
 }

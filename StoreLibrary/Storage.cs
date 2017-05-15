@@ -12,21 +12,30 @@ namespace StoreLibrary
     using System;
     using System.Collections.Generic;
     
-    public partial class Storage
+    public partial class Storage : BaseClass
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Storage()
+       
+        public Storage(Unit u, int capasity)
         {
-            this.ImplementsCards = new HashSet<ImplementsCard>();
+            Unit = u;
+            Capasity = capasity;
         }
-    
-        public System.Guid S_id { get; set; }
-        public Nullable<System.Guid> Unit_id { get; set; }
-        public Nullable<int> Capasity { get; set; }
+
+        public Dictionary<Guid, Storage> StorageDict = new Dictionary<Guid, Storage>();
+      
+        public Guid Unit_id { get; set; }
+        public int Capasity { get; set; }
         public string Adress { get; set; }
-    
-        public virtual Unit Unit { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ImplementsCard> ImplementsCards { get; set; }
+
+        public Unit Unit
+        {
+            get { return Unit.UnitDict[Unit_id]; }
+            set
+            {
+                if (Unit.UnitDict.ContainsKey(Unit_id))
+                    Unit_id = value.Id;
+            }
+        }
+
     }
 }

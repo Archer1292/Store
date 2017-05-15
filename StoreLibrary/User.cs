@@ -12,15 +12,27 @@ namespace StoreLibrary
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class User : BaseClass
     {
-        public System.Guid Id { get; set; }
+        public User(Employee empl, string login,string password,string access_rights="user")
+        {
+            Employee = empl;
+            Login = login;
+            Password = password;
+        }
         public string Login { get; set; }
         public string Password { get; set; }
-        public Nullable<System.Guid> Employee { get; set; }
-        public string Access_rights { get; set; }
-        public Nullable<System.Guid> Employee_id { get; set; }
-    
-        public virtual Employee Employee1 { get; set; }
+        private Guid Employee_id { get; set; }
+        public string Access_rights { get;  set; }
+
+        public Employee Employee
+        {
+            get { return Employee.EmployeeDict[Employee_id]; }
+            set
+            {
+                if (Employee.EmployeeDict.ContainsKey(value.Id))
+                    Employee_id = value.Id;
+            }
+        }
     }
 }

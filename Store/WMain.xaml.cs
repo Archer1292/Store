@@ -17,7 +17,7 @@ using System.Data;
 using StoreLibrary;
 using System.Configuration;
 using System.Data.Entity;
-using System.Windows;
+
 
 
 namespace Store
@@ -27,18 +27,14 @@ namespace Store
     /// </summary>
     public partial class MainWindow : Window
     {
-        StoreContext db;
+       
         public MainWindow()
         {
             InitializeComponent();
-            db = new StoreContext();
-            db.Implements.Load();// загружаем данные
-            gridImplements.ItemsSource = db.Implements.Local.ToBindingList();// устанавливаем привязку к кэшу
-            this.Closing += Window_Closing;
+           
         }
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            db.Dispose();
         }
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {

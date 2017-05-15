@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="265cb22e89184e08b5ba54b503d9d296" Name="Diagram1" ZoomLevel="93">
+        <EntityTypeShape EntityType="StoreDBModel.Employee" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel.ImplementMotion" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel.Implement" Width="1.5" PointX="7.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel.ImplementsCard" Width="1.5" PointX="9.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel.Person" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel.Storage" Width="1.5" PointX="7.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel.Unit" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreDBModel.User" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <AssociationConnector Association="StoreDBModel.FK_Employees_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel.FK_Employees_ToUnit" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel.FK_ImplementMotions_ToEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel.FK_Unit_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel.FK_Users_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel.FK_ImplementMotions_ToImplementCards" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel.FK_ImplementsCards_ToTable_1" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel.FK_ImplementsCards_ToTable" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreDBModel.FK_Storages_ToTable" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

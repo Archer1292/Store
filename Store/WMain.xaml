@@ -27,7 +27,7 @@
         <TabControl Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionChanged="TabControl_SelectionChanged"  >
             <TabItem Header="Реманент" Margin="0,0,-4,-4">
                 <Grid>
-                    <DataGrid x:Name="gridImplements" AutoGenerateColumns="False" RenderTransformOrigin="-0.41,0.05" Margin="0,0,4,55" Height="199" VerticalAlignment="Bottom" SelectionChanged="dataGrid_SelectionChanged">
+                    <DataGrid x:Name="gridImplements" AutoGenerateColumns="False" RenderTransformOrigin="-0.41,0.05" Margin="0,0,4,38" Height="216" VerticalAlignment="Bottom" SelectionChanged="dataGrid_SelectionChanged">
                         <DataGrid.Columns>
                             <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}"/>
                             <DataGridTextColumn Binding="{Binding Name}"  Header="Назва"/>
@@ -56,5 +56,6 @@
 
 
         </TabControl>
+
     </Grid>
 </Window>

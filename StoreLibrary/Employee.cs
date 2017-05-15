@@ -12,29 +12,33 @@ namespace StoreLibrary
     using System;
     using System.Collections.Generic;
     
-    public partial class Employee
+    public partial class Employee : BaseClass
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Employee()
+        public Employee(Person p, Unit u)
         {
-            this.ImplementMotions = new HashSet<ImplementMotion>();
-            this.Units = new HashSet<Unit>();
-            this.Users = new HashSet<User>();
+            First_name = p.First_name;
+            Last_name = p.Last_name;
+            Person_id = p.Id;
+            Unit = u;
         }
-    
-        public System.Guid E_id { get; set; }
-        public Nullable<System.Guid> Unit_id { get; set; }
-        public Nullable<System.Guid> Person { get; set; }
+        public Dictionary<Guid, Employee> EmployeeDict = new Dictionary<Guid, Employee>();
+
+        private Guid Unit_id;
+        private Guid Person_id;
         public string Photo { get; set; }
-        public Nullable<System.Guid> Person_id { get; set; }
-    
-        public virtual Unit Unit { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ImplementMotion> ImplementMotions { get; set; }
-        public virtual Person1 Person1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Unit> Units { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> Users { get; set; }
+        public string First_name { get; private set; }
+        public string Last_name { get; private set; }
+
+        public Unit Unit
+        {
+            get { return Unit.UnitDict[Unit_id]; }
+            set
+            {
+                if (Unit.UnitDict.ContainsKey(value.Id))
+                    Unit_id = value.Id;
+            }
+        }
+
     }
 }

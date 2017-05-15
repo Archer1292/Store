@@ -12,16 +12,38 @@ namespace StoreLibrary
     using System;
     using System.Collections.Generic;
     
-    public partial class ImplementMotion
+    public partial class ImplementMotion : BaseClass
     {
-        public System.Guid M_id { get; set; }
-        public Nullable<System.Guid> ImplementCard_id { get; set; }
-        public string Type { get; set; }
-        public Nullable<System.DateTime> Date { get; set; }
-        public Nullable<int> Amount { get; set; }
-        public Nullable<System.Guid> Employee_id { get; set; }
+        public ImplementMotion(ImplementsCard ic, Employee empl, int amount)
+        {
+            ImplementsCard = ic;
+            Employee = empl;
+            Amount = amount;
+        }
+        public enum MotionType { input=1, output=2, undefined=3 }
+        private Guid ImplementCard_id;
+        private Guid Employee_id;
+        public MotionType Type { get; set; }
+        public DateTime Date { get; set; }
+        public int Amount { get; set; }        
     
-        public virtual Employee Employee { get; set; }
-        public virtual ImplementsCard ImplementsCard { get; set; }
+        public  Employee Employee
+        {
+            get { return Employee.EmployeeDict[Employee_id]; }
+            set
+            {
+                if (Employee.EmployeeDict.ContainsKey(value.Id))
+                    Employee_id = value.Id;
+            }
+        }
+        public  ImplementsCard ImplementsCard
+        {
+            get { return ImplementsCard.ImplementsCardDict[Employee_id]; }
+            set
+            {
+                if (ImplementsCard.ImplementsCardDict.ContainsKey(value.Id))
+                    ImplementCard_id = value.Id;
+            }
+        }
     }
 }

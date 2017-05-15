@@ -12,12 +12,20 @@ namespace StoreLibrary
     using System;
     using System.Collections.Generic;
     
-    public partial class Person
+    public partial class Person : BaseClass
     {
-        public System.Guid Id { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Person(String fname,string lname,string phone="555-55-55")
+        {
+            First_name = fname;
+            Last_name = lname;
+            Phone = phone;            
+        }
+    
+        
         public string First_name { get; set; }
         public string Last_name { get; set; }
         public string Phone { get; set; }
-        public System.Guid P_id { get; set; }
+        public LinkedList<Person> PersonsList = new LinkedList<Person>();
     }
 }

@@ -12,23 +12,37 @@ namespace StoreLibrary
     using System;
     using System.Collections.Generic;
     
-    public partial class ImplementsCard
+    public partial class ImplementsCard : BaseClass
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ImplementsCard()
+        
+        public ImplementsCard(Implement impl, Storage s, int amount, int aviable=1)
         {
-            this.ImplementMotions = new HashSet<ImplementMotion>();
+           
         }
-    
-        public System.Guid Ic_id { get; set; }
-        public Nullable<System.Guid> Implement_id { get; set; }
-        public Nullable<System.Guid> Storage_id { get; set; }
-        public Nullable<int> Amount { get; set; }
-        public int Aviable { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ImplementMotion> ImplementMotions { get; set; }
-        public virtual Implement Implement { get; set; }
-        public virtual Storage Storage { get; set; }
+
+        public Dictionary<Guid, ImplementsCard> ImplementsCardDict = new Dictionary<Guid, ImplementsCard>();
+        public Guid Implement_id { get;private set; }
+        public Guid Storage_id { get;private set; }
+        public int Amount { get; set; }
+        public int Aviable { get; set; }   
+        public Implement Implement
+        {
+            get { return Implement.ImplementsDict[Implement_id]; }
+            set
+            {
+                if (Implement.ImplementsDict.ContainsKey(Implement_id))
+                    Implement_id = value.Id;
+            }
+        }
+        public Storage Storage
+        {
+            get { return Storage.StorageDict[Storage_id]; }
+            set
+            {
+                if (Storage.StorageDict.ContainsKey(value.Id))
+                    Storage_id = value.Id;
+            }
+        }
+        
     }
 }

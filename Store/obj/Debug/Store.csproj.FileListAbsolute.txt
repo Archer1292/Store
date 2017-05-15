@@ -34,3 +34,6 @@ D:\MyProject\CSharp\Store\Store\bin\Debug\EntityFramework.dll
 D:\MyProject\CSharp\Store\Store\bin\Debug\EntityFramework.SqlServer.dll
 D:\MyProject\CSharp\Store\Store\bin\Debug\EntityFramework.xml
 D:\MyProject\CSharp\Store\Store\bin\Debug\EntityFramework.SqlServer.xml
+D:\MyProject\CSharp\Store\Store\bin\Debug\StoreDB.mdf
+D:\MyProject\CSharp\Store\Store\bin\Debug\StoreDB_log.ldf
+D:\MyProject\CSharp\Store\Store\bin\Debug\ru\EntityFramework.resources.dll
