@@ -14,28 +14,18 @@ namespace StoreLibrary
     
     public partial class Storage : BaseClass
     {
-       
-        public Storage(Unit u, int capasity)
+        
+        public Storage()
         {
-            Unit = u;
-            Capasity = capasity;
+            
         }
 
-        public Dictionary<Guid, Storage> StorageDict = new Dictionary<Guid, Storage>();
-      
-        public Guid Unit_id { get; set; }
+        public Dictionary<Guid, Storage> Storages = new Dictionary<Guid, Storage>();
+        public Guid _unitId { get; set; }
         public int Capasity { get; set; }
         public string Adress { get; set; }
-
-        public Unit Unit
-        {
-            get { return Unit.UnitDict[Unit_id]; }
-            set
-            {
-                if (Unit.UnitDict.ContainsKey(Unit_id))
-                    Unit_id = value.Id;
-            }
-        }
-
+    
+        
+        public virtual Unit Unit { get; set; }
     }
 }

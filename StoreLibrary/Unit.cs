@@ -15,15 +15,15 @@ namespace StoreLibrary
     public partial class Unit : BaseClass
     {
         
-        public Unit(String name)
+        public Unit()
         {
-            Name = name;
+            
         }
-
-        public Dictionary<Guid, Unit> UnitDict = new Dictionary<Guid, Unit>();
+        public Dictionary<Guid, uint> Unints = new Dictionary<Guid, uint>();
+       
         public string Name { get; set; }
-        public Nullable<System.Guid> Head_id { get; set; }
-    
+        public Guid _headId { get; set; }  
+        public virtual Employee HeadOfUnit { get; set; }
        
     }
 }

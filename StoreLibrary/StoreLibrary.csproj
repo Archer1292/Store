@@ -58,6 +58,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,48 +68,58 @@
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
     <Compile Include="Employee.cs">
-      <DependentUpon>StoreModel.tt</DependentUpon>
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
     </Compile>
     <Compile Include="Implement.cs">
-      <DependentUpon>StoreModel.tt</DependentUpon>
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ImplementMotion.cs">
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDBV2.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDBV2.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDBV2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDBV2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelDBV2.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Overhead.cs">
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OverheadLine.cs">
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
     </Compile>
     <Compile Include="_ImplementCard.cs" />
-    <Compile Include="ImplementMotion.cs">
-      <DependentUpon>StoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ImplementsCard.cs">
-      <DependentUpon>StoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Person.cs">
-      <DependentUpon>StoreModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Storage.cs">
-      <DependentUpon>StoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StoreModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StoreModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StoreModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StoreModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StoreModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StoreModel.edmx</DependentUpon>
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
     </Compile>
     <Compile Include="Unit.cs">
-      <DependentUpon>StoreModel.tt</DependentUpon>
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
-      <DependentUpon>StoreModel.tt</DependentUpon>
+      <DependentUpon>ModelDBV2.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ModelDBV2.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDBV2.edmx</DependentUpon>
+      <LastGenOutput>ModelDBV2.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ModelDBV2.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelDBV2.edmx</DependentUpon>
+      <LastGenOutput>ModelDBV2.cs</LastGenOutput>
+    </Content>
     <Content Include="StoreDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -116,27 +127,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>StoreDB.mdf</DependentUpon>
     </Content>
-    <Content Include="StoreModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StoreModel.edmx</DependentUpon>
-      <LastGenOutput>StoreModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="StoreModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StoreModel.edmx</DependentUpon>
-      <LastGenOutput>StoreModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
-    <EntityDeploy Include="StoreModel.edmx">
+    <None Include="ClassDiagram1.cd" />
+    <EntityDeploy Include="ModelDBV2.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>StoreModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModelDBV2.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="StoreModel.edmx.diagram">
-      <DependentUpon>StoreModel.edmx</DependentUpon>
+    <None Include="ModelDBV2.edmx.diagram">
+      <DependentUpon>ModelDBV2.edmx</DependentUpon>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -152,6 +154,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="class\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

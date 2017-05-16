@@ -14,14 +14,12 @@ namespace StoreLibrary
     
     public partial class Implement : BaseClass
     {
-        
-        public Implement(String name, string type)
+       
+        public Implement()
         {
-            Name = name;
-            Type = type;
+           
         }
-
-        public Dictionary<Guid,Implement> ImplementsDict = new Dictionary<Guid, Implement>();
+        public Dictionary<Guid, Implement> Implements = new Dictionary<Guid, Implement>();
         public string Type { get; set; }
         public string Name { get; set; }
         public float Weight { get; set; }
@@ -31,6 +29,7 @@ namespace StoreLibrary
         public string Deskription { get; set; }
         public string Photo { get; set; }
     
-       
+        
+        
     }
 }
