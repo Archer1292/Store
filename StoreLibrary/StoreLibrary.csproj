@@ -67,56 +67,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
-    <Compile Include="Employee.cs">
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Implement.cs">
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelDBV2.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDBV2.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelDBV2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ModelDBV2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelDBV2.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Overhead.cs">
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OverheadLine.cs">
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="_ImplementCard.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Implement.cs" />
+    <Compile Include="ImplementCard.cs" />
+    <Compile Include="Overhead.cs" />
+    <Compile Include="OverheadLine.cs" />
+    <Compile Include="Storage.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Storage.cs">
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Unit.cs">
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModelDBV2.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelDBV2.edmx</DependentUpon>
-      <LastGenOutput>ModelDBV2.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ModelDBV2.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelDBV2.edmx</DependentUpon>
-      <LastGenOutput>ModelDBV2.cs</LastGenOutput>
-    </Content>
     <Content Include="StoreDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -128,13 +89,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
-    <EntityDeploy Include="ModelDBV2.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelDBV2.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ModelDBV2.edmx.diagram">
-      <DependentUpon>ModelDBV2.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -152,9 +106,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="class\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
