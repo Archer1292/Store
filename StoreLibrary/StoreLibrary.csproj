@@ -73,9 +73,6 @@
     <Compile Include="Implement.cs">
       <DependentUpon>ModelDBV2.tt</DependentUpon>
     </Compile>
-    <Compile Include="ImplementMotion.cs">
-      <DependentUpon>ModelDBV2.tt</DependentUpon>
-    </Compile>
     <Compile Include="ModelDBV2.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
