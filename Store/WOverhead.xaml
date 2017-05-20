@@ -5,23 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Store"
         mc:Ignorable="d"
-        Title="Прийом реманенту" Height="398.473" Width="300">
+        Title="Прийом реманенту" Height="300" Width="300">
     <Grid>
-        <Label x:Name="blbHeader" Content="_" HorizontalAlignment="Left" Margin="85,9,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label" Content="Склад" HorizontalAlignment="Left" Margin="29,39,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="115,41,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label1" Content="Дата" HorizontalAlignment="Left" Margin="29,65,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblDate" Content="________" HorizontalAlignment="Left" Margin="115,65,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label1_Copy" Content="Приймає" HorizontalAlignment="Left" Margin="29,91,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblEmployee" Content="________" HorizontalAlignment="Left" Margin="115,91,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="labReciver" Content="Передає" HorizontalAlignment="Left" Margin="29,117,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblReciver" Content="________" HorizontalAlignment="Left" Margin="115,117,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.366,2.676"/>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="29,230,0,0" VerticalAlignment="Top" Width="235"/>
-        <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="29,148,0,0" VerticalAlignment="Top" Width="233"/>
-        <Button x:Name="btnAccept" Content="Прийняти" HorizontalAlignment="Left" Margin="161,335,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.487,1.119"/>
-
-        <Button x:Name="btnCancel" Content="Вімінити" HorizontalAlignment="Left" Margin="61,335,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnNewImpl" Content="Додати реманент" HorizontalAlignment="Left" Margin="148,187,0,0" VerticalAlignment="Top" Width="116" Click="btnNewImpl_Click"/>
-
+        <Label x:Name="blbHeader" Content="_" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Склад" HorizontalAlignment="Left" Margin="47,42,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="133,42,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Дата" HorizontalAlignment="Left" Margin="47,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDate" Content="________" HorizontalAlignment="Left" Margin="133,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Приймає" HorizontalAlignment="Left" Margin="47,104,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEmployee" Content="________" HorizontalAlignment="Left" Margin="133,104,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labReciver" Content="Передає" HorizontalAlignment="Left" Margin="47,135,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblReciver" Content="________" HorizontalAlignment="Left" Margin="133,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.366,2.676"/>
+        
     </Grid>
 </Window>

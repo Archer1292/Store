@@ -11,7 +11,6 @@
     <AssemblyName>StoreLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,6 +23,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -68,62 +68,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
-    <Compile Include="Employee.cs">
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Employees1.cs" />
-    <Compile Include="Implement.cs">
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ImplementCard.cs">
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Overhead.cs">
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="OverheadLine.cs">
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Storage.cs">
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StoreDBMyModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StoreDBMyModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StoreDBMyModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StoreDBMyModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StoreDBMyModel.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="Implement.cs" />
+    <Compile Include="ImplementCard.cs" />
+    <Compile Include="Overhead.cs" />
+    <Compile Include="OverheadLine.cs" />
+    <Compile Include="Storage.cs" />
     <Compile Include="TableManager.cs" />
-    <Compile Include="Unit.cs">
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>StoreDBMyModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Unit.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="StoreDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="StoreDBMyModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StoreDBMyModel.edmx</DependentUpon>
-      <LastGenOutput>StoreDBMyModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="StoreDBMyModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>StoreDBMyModel.edmx</DependentUpon>
-      <LastGenOutput>StoreDBMyModel.cs</LastGenOutput>
     </Content>
     <Content Include="StoreDB_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -134,13 +92,6 @@
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
-    <EntityDeploy Include="StoreDBMyModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>StoreDBMyModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="StoreDBMyModel.edmx.diagram">
-      <DependentUpon>StoreDBMyModel.edmx</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

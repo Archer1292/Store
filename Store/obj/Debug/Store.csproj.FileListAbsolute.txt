@@ -15,12 +15,18 @@ D:\MyProject\CSharp\Store\Store\obj\Debug\WAuthorization.baml
 D:\MyProject\CSharp\Store\Store\obj\Debug\WAuthorization.g.cs
 D:\MyProject\CSharp\Store\Store\bin\Debug\StoreLibrary.dll
 D:\MyProject\CSharp\Store\Store\bin\Debug\StoreLibrary.pdb
+D:\MyProject\CSharp\Store\Store\obj\Debug\testDB.g.cs
 D:\MyProject\CSharp\Store\Store\obj\Debug\Store_MarkupCompile.lref
+D:\MyProject\CSharp\Store\Store\obj\Debug\testDB.baml
+D:\MyProject\CSharp\Store\Store\obj\Debug\WAddEmployee.baml
 D:\MyProject\CSharp\Store\Store\obj\Debug\WMain.baml
+D:\MyProject\CSharp\Store\Store\obj\Debug\WImplement.g.cs
+D:\MyProject\CSharp\Store\Store\obj\Debug\WAddEmployee.g.cs
 D:\MyProject\CSharp\Store\Store\obj\Debug\WMain.g.cs
 D:\MyProject\CSharp\Store\Store\obj\Debug\WImplementCard.g.cs
 D:\MyProject\CSharp\Store\Store\obj\Debug\WMotion.g.cs
 D:\MyProject\CSharp\Store\Store\obj\Debug\WUser.g.cs
+D:\MyProject\CSharp\Store\Store\obj\Debug\WImplement.baml
 D:\MyProject\CSharp\Store\Store\obj\Debug\WImplementCard.baml
 D:\MyProject\CSharp\Store\Store\obj\Debug\WMotion.baml
 D:\MyProject\CSharp\Store\Store\obj\Debug\WUser.baml
@@ -33,7 +39,3 @@ D:\MyProject\CSharp\Store\Store\bin\Debug\StoreDB_log.ldf
 D:\MyProject\CSharp\Store\Store\bin\Debug\ru\EntityFramework.resources.dll
 D:\MyProject\CSharp\Store\Store\obj\Debug\WOverhead.g.cs
 D:\MyProject\CSharp\Store\Store\obj\Debug\WOverhead.baml
-D:\MyProject\CSharp\Store\Store\obj\Debug\WEmployeeEdit.baml
-D:\MyProject\CSharp\Store\Store\obj\Debug\WEmployeeEdit.g.cs
-D:\MyProject\CSharp\Store\Store\bin\Debug\Store.exe.CodeAnalysisLog.xml
-D:\MyProject\CSharp\Store\Store\bin\Debug\Store.exe.lastcodeanalysissucceeded

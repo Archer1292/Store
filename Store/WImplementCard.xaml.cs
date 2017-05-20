@@ -25,9 +25,9 @@ namespace Store
             InitializeComponent();
             Binding binding = new Binding();
 
-            //binding.ElementName = "Storage"; // элемент-источник
-            //binding.Source = Storage.AllItems; // свойство элемента-источника
-            //cbStorage.SetBinding(TextBlock.TextProperty, binding); // установка привязки для элемента-приемника
+            binding.ElementName = "Storage"; // элемент-источник
+            binding.Source = Storage.AllItems; // свойство элемента-источника
+            cbStorage.SetBinding(TextBlock.TextProperty, binding); // установка привязки для элемента-приемника
         }
         
     }

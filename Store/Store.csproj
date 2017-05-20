@@ -78,6 +78,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="testDB.xaml.cs">
+      <DependentUpon>testDB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WImplement.xaml.cs">
+      <DependentUpon>WImplement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WAuthorization.xaml.cs">
       <DependentUpon>WAuthorization.xaml</DependentUpon>
     </Compile>
@@ -96,11 +102,19 @@
     <Compile Include="WUser.xaml.cs">
       <DependentUpon>WUser.xaml</DependentUpon>
     </Compile>
+    <Page Include="testDB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WImplement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WAuthorization.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WEmployeeEdit.xaml">
+    <Page Include="WAddEmployee.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,8 +126,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WEmployeeEdit.xaml.cs">
-      <DependentUpon>WEmployeeEdit.xaml</DependentUpon>
+    <Compile Include="WAddEmployee.xaml.cs">
+      <DependentUpon>WAddEmployee.xaml</DependentUpon>
     </Compile>
     <Compile Include="WMain.xaml.cs">
       <DependentUpon>WMain.xaml</DependentUpon>
