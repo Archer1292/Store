@@ -23,5 +23,11 @@ namespace Store
         {
             InitializeComponent();
         }
+
+        private void btnNewImpl_Click(object sender, RoutedEventArgs e)
+        {
+            //WImplementEdit w = new WImplementEdit(null);
+            //w.Show();
+        }
     }
 }

@@ -26,7 +26,7 @@ namespace temp1
             AutoshopEntities context = new AutoshopEntities();
 
             foreach (CarTable ct in lct)
-                context.CarTables.AddObject(ct);
+              //  context.CarTables.AddObject(ct);
 
             context.SaveChanges();
         }

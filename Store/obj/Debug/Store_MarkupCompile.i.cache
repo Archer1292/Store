@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\MyProject\CSharp\Store\Store\App.xaml
-10-518945608
+81570626350
 
-18365091849
+16-1712171197
 17-536533759
-testDB.xaml;WImplement.xaml;WAuthorization.xaml;WAddEmployee.xaml;WMain.xaml;WImplementCard.xaml;WMotion.xaml;WOverhead.xaml;WUnits.xaml;WUser.xaml;
+WAuthorization.xaml;WEmployeeEdit.xaml;WMain.xaml;WImplementCard.xaml;WMotion.xaml;WOverhead.xaml;WUnits.xaml;WUser.xaml;
 
-True
+False
 
