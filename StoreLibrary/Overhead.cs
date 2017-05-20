@@ -14,14 +14,14 @@ namespace StoreLibrary
         public Overhead(DataRow dr) : base(dr) { }
 
 
-        public Employee Giver_id
+        public Employee Employee_id
         {
-            get { return Employee.GetByID((Guid)_row["Giver_id"]); }
+            get { return Employee.GetByID((Guid)_row["Employee_id"]); }
             set
             {
 
-                if (Employee.GetByID((Guid)_row["Giver_id"]) != null)
-                    _row["Giver_id"] = value.Id;
+                if (Employee.GetByID((Guid)_row["Employee_id"]) != null)
+                    _row["Employee_id"] = value.Id;
             }
         }
         public Employee Reciver_id

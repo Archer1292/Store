@@ -38,16 +38,22 @@
                         </DataGrid.Columns>
                     </DataGrid>
                     <Button x:Name="btnUpdate" Content="Оновити" HorizontalAlignment="Left" Margin="34,244,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click"/>
-                    <Button x:Name="btnNewImpl" Content="Додати" Width="75" Margin="242,244,188,10"/>
+                    <Button x:Name="btnIn" Content="Прийняти" Width="75" Margin="242,244,188,10" Click="btnIn_Click"/>
                     <Button x:Name="btnChangeImpl" Content="Змінити" Width="75" Margin="136,244,294,10"/>
-                    <Button x:Name="btnDel" Content="Видалити" Margin="127,244,277,10"/>
+                    <Button x:Name="btnOut" Content="Видати" Margin="127,244,277,10"/>
                 </Grid>
             </TabItem>
+
             <TabItem Header="Склади" Height="28" VerticalAlignment="Bottom">
-                <DataGrid x:Name="gridStorages" SelectionChanged="dataGrid1_SelectionChanged" Loaded="gridStorages_Loaded" Margin="-6,0,-5,31"/>
-            </TabItem>
+                <Grid>
+                    <DataGrid x:Name="gridStorages" SelectionChanged="dataGrid1_SelectionChanged" Loaded="gridStorages_Loaded" Margin="-6,0,-5,31"/>
+
+
+                </Grid>
+                </TabItem>
             <TabItem Header="Звіти">
             </TabItem>
+            
 
 
 

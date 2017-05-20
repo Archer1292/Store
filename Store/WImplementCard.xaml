@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="Картка реманенту" Height="256.489" Width="493.511">
     <Grid Margin="0">
-        <Label x:Name="label_Copy8" Content="Склад" HorizontalAlignment="Left" Margin="20,45,0,0" VerticalAlignment="Top" Height="26" Width="42"/>
-        <ComboBox x:Name="cbStorage" HorizontalAlignment="Left" Margin="130,39,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy8" Content="Склад" HorizontalAlignment="Left" Margin="20,39,0,0" VerticalAlignment="Top" Height="26" Width="42"/>
+        <ComboBox x:Name="cbStorage" HorizontalAlignment="Left" Margin="130,39,0,0" VerticalAlignment="Top" Width="120"
+                 
+                  />
         <Label x:Name="label_Copy9" Content="Тип реманенту" HorizontalAlignment="Left" Margin="20,68,0,0" VerticalAlignment="Top" Height="26" Width="95"/>
         <ComboBox x:Name="cbType" HorizontalAlignment="Left" Margin="130,68,0,0" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label_Copy10" Content="Назва реманенту" HorizontalAlignment="Left" Margin="20,94,0,0" VerticalAlignment="Top" Height="26" Width="105"/>

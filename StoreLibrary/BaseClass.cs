@@ -15,7 +15,9 @@ namespace StoreLibrary
 
         //Отримати всі об’єкти
         static public T[] AllItems
-        { get { return GetByQuery(""); } }
+        { get
+            { return GetByQuery(""); }
+        }
 
         //Отримати об’єкт по id
         static public T GetByID(Guid id)
@@ -126,5 +128,6 @@ namespace StoreLibrary
             tm.Update(_row);
         }
 
+        
     }
 }

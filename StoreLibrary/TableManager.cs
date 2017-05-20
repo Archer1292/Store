@@ -33,7 +33,8 @@ namespace StoreLibrary
             }
         }
 
-        static TableManager() { _connection.ConnectionString = @"provider=Microsoft.JET.OLEDB.4.0;data source = C:\Program Files\Voll\DB\dbVoll.mdb"; }
+        static TableManager() { _connection.ConnectionString = System.Configuration.ConfigurationManager.
+    ConnectionStrings["ConnectionString"].ConnectionString; ; }
 
         //Отримання менеджера потрібної таблиці
         static public TableManager GetTableManager(string tableName)

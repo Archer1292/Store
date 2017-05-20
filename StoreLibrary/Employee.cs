@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,26 +11,21 @@ namespace StoreLibrary
     public partial class Employee : BaseClass<Employee>
     {
 
-        public Employee()
-        {
+        public Employee()        {        }
+        public Employee(DataRow dr) : base(dr) { }
 
-        }
-        
         private Unit UnitId
         {
-            get { return Unit.GetByID(_unitId); }
+            get { return Unit.GetByID((Guid)_row["Unit_id"]); }
             set
             {
 
-                if (Unit.GetByID(_unitId) != null)
-                    _unitId = value.Id;
+                if (Unit.GetByID((Guid)_row["Unit_id"]) != null)
+                    _row["Unit_id"] = value.Id;
             }
         }
 
-        private Guid _unitId {
-            get { return (Guid)_row["Unit_id"]; }
-            set { _row["Unit_id"] = value; }
-        }
+       
         public string Photo {
             get { return _row["Photo"].ToString(); }
             set { _row["Photo"] = value; }

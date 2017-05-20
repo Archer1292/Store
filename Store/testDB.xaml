@@ -18,7 +18,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <DataGrid AutoGenerateColumns="False" x:Name="phonesGrid">
+        <DataGrid AutoGenerateColumns="False" x:Name="phonesGrid" Margin="0,0,0,72">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="id" Width="120"/>
                 <DataGridTextColumn Binding="{Binding Login}" Header="login" Width="125"/>
@@ -30,5 +30,6 @@
             <Button x:Name="updateButton" Content="Обновить" Click="updateButton_Click" />
             <Button x:Name="deleteButton" Content="Удалить" Click="deleteButton_Click" />
         </StackPanel>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="57" Margin="0,107,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="332"/>
     </Grid>
 </Window>

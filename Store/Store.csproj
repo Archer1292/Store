@@ -93,6 +93,9 @@
     <Compile Include="WMotion.xaml.cs">
       <DependentUpon>WMotion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WOverhead.xaml.cs">
+      <DependentUpon>WOverhead.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WUnits.xaml.cs">
       <DependentUpon>WUnits.xaml</DependentUpon>
     </Compile>
@@ -135,6 +138,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WMotion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WOverhead.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
